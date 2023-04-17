@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="bdwz" version="1.0.1_2023-04-16" shortdescription="Drinks Bar/Pub Quick" description="Checkbox list of drink:* tags for common drinks in establishments serving alcohol, with both alcoholic beverages and some non-alcoholic ones, using only yes and unset, without information on how drinks are served. Intended for rapid drink tagging.">
+  <group name="Facilities" icon="presets/accommodation/hotel.svg">
+    <group name="Food+Drinks" icon="presets/food/restaurant.svg">
+      <item name="Drinks (Binary Bar/Pub)" type="node,closedway,multipolygon" icon="presets/shop/beverages.svg" preset_name_label="true">
+        <link wiki="Key:drink:*" text="Link to drink tag prefix wiki"/>
+	<link href="https://taginfo.openstreetmap.org/search?q=drink%3A" text="List of drink tags by most used" />
+	<label text="Preset for any establishment that serves alcohol."/>
+	<check key="bar" text="Place has a bar?" match="key" disable_off="true"/>
+	<checkgroup columns="2">
+          <check key="cocktails" text="Cocktails (tag)" match="key" disable_off="true"/>
+	  <check key="drink:cocktails" text="Cocktails (drink:)" match="key" disable_off="true"/>
+	</checkgroup>
+	<item_separator />
+	<checkgroup columns="4">
+          <check key="drink:beer" text="Beer" match="key" disable_off="true"/>
+          <check key="drink:liquor" text="Liquor" match="key" disable_off="true"/>
+	  <check key="drink:cider" text="Cider (hard)" match="key" disable_off="true"/>
+	  <check key="drink:rum" text="Rum" match="key" disable_off="true"/>
+<!-- line break !-->
+          <check key="drink:wine" text="Wine" match="key" disable_off="true"/>
+          <check key="drink:liqueur" text="Liqueur" match="key" disable_off="true"/>
+          <check key="drink:whisky" text="Whiskey" match="key" disable_off="true"/>
+          <check key="drink:vodka" text="Vodka" match="key" disable_off="true"/>
+<!-- line break !-->
+	  <check key="drink:cognac" text="Cognac" match="key" disable_off="true"/>
+          <check key="drink:gin" text="Gin" match="key" disable_off="true"/>
+          <check key="drink:sake" text="Sake" match="key" disable_off="true"/>
+          <check key="drink:hard_seltzer" text="Hard seltzer" match="key" disable_off="true"/>
+<!-- line break !-->
+          <check key="drink:brandy" text="Brandy" match="key" disable_off="true"/>
+          <check key="drink:tequila" text="Tequila" match="key" disable_off="true"/>
+          <check key="drink:absinthe" text="Absinthe" match="key" disable_off="true"/>
+          <check key="drink:sparkling_wine" text="Sparkling wine" match="key" disable_off="true"/>
+	</checkgroup>
+	<item_separator />
+	<checkgroup columns="3">
+          <check key="drink:water" text="Water" disable_off="true"/>
+          <check key="drink:tea" text="Tea" disable_off="true"/>
+	  <check key="drink:juice" text="Juice (fruit/veg.)" disable_off="true"/>
+<!-- line break !-->
+          <check key="drink:lemonade" text="Lemonade" disable_off="true"/>
+	  <check key="drink:coffee" text="Coffee" disable_off="true"/>
+	  <check key="drink:energy_drink" text="Energy drink" disable_off="true"/>
+	</checkgroup>
+	<checkgroup columns="2">
+	  <check key="drink:soda" text="Soda water (unsweetened)" disable_off="true"/>
+	  <check key="drink:soft_drink" text="Soft drink (sweetened soda/water)" disable_off="true"/>
+	</checkgroup>
+      </item>
+    </group>
+  </group>
+</presets>
